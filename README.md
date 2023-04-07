@@ -14,6 +14,7 @@ This is a web API project developed using ASP.NET Core that allows for the manag
 This endpoint is used to add salary data for a specific data type. The data type is specified in the URL path, and the salary data is provided in the request body as a JSON or XML or Custom payload.
 
 **Request Body**
+
 The request body of the `AddSalary` endpoint should contain a JSON object with the following properties:
 * `FirstName (string, required)`: The name of the employee.
 * `LastName (string, required)`: The lastName of the employee.
@@ -32,7 +33,7 @@ The request body of the `AddSalary` endpoint should contain a JSON object with t
 ### `DELETE /{dataType}/Salary/{id}`
 This endpoint is used to delete existing salary data. The data type and the ID of the salary to be deleted are specified in the URL path.
 
-## Response
+**Response**
 * `200 OK`: Salary data was successfully deleted.
 * `404 Not Found`: The specified salary data was not found.
 * `500 Internal Server Error`: An error occurred on the server.
@@ -40,7 +41,7 @@ This endpoint is used to delete existing salary data. The data type and the ID o
 ### `GET /{dataType}/Salary/{id}`
 This endpoint is used to retrieve salary data for a specific ID. The data type and the ID of the salary to be retrieved are specified in the URL path.
 
-## Response
+**Response**
 * `200 OK`: Salary data was successfully retrieved.
 * `404 Not Found`: The specified salary data was not found.
 * `500 Internal Server Error`: An error occurred on the server.
@@ -48,7 +49,7 @@ This endpoint is used to retrieve salary data for a specific ID. The data type a
 ### `GET /{dataType}/Salary?startDate={startDate}&endDate={endDate}`
 This endpoint is used to retrieve salary data for a specific date range. The data type, start date, and end date are specified as query parameters.
 
-## Response
+**Response**
 * `200 OK`: Salary data was successfully retrieved.
 * `500 Internal Server Error`: An error occurred on the server
 
