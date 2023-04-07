@@ -23,3 +23,34 @@ The request body of the `AddSalary` endpoint should contain a JSON object with t
 * `PayDate(DateTime, required)`: This field epresents the date when the salary is paid. This field is a required field and should be provided in the format yyyy-MM-dd
 * `OverTimeCalculator (string, required)`: The type of overtime calculator to use when calculating the salary. Must be one of "CalculatorA", "CalculatorB", or "CalculatorC".
 
+## Response
+* `200 OK`: Salary data was successfully updated.
+* `400 Bad Request`: The request was invalid, and the API was unable to process it.
+* `404 Not Found`: The specified salary data was not found.
+* `500 Internal Server Error`: An error occurred on the server.
+
+### `DELETE /{dataType}/Salary/{id}`
+This endpoint is used to delete existing salary data. The data type and the ID of the salary to be deleted are specified in the URL path.
+
+## Response
+* `200 OK`: Salary data was successfully deleted.
+* `404 Not Found`: The specified salary data was not found.
+* `500 Internal Server Error`: An error occurred on the server.
+
+### `GET /{dataType}/Salary/{id}`
+This endpoint is used to retrieve salary data for a specific ID. The data type and the ID of the salary to be retrieved are specified in the URL path.
+
+## Response
+* `200 OK`: Salary data was successfully retrieved.
+* `404 Not Found`: The specified salary data was not found.
+* `500 Internal Server Error`: An error occurred on the server.
+
+### `GET /{dataType}/Salary?startDate={startDate}&endDate={endDate}`
+This endpoint is used to retrieve salary data for a specific date range. The data type, start date, and end date are specified as query parameters.
+
+## Response
+* `200 OK`: Salary data was successfully retrieved.
+* `500 Internal Server Error`: An error occurred on the server
+
+## Testing
+To test the API, you can use tools like Postman or curl to make HTTP requests to the above endpoints. You can also use unit tests to test individual components of the API.
