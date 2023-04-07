@@ -13,7 +13,7 @@ This is a web API project developed using ASP.NET Core that allows for the manag
 ### `POST /{dataType}/Salary/AddSalary`
 This endpoint is used to add salary data for a specific data type. The data type is specified in the URL path, and the salary data is provided in the request body as a JSON or XML or Custom payload.
 
-## Request Body
+** Request Body **
 The request body of the `AddSalary` endpoint should contain a JSON object with the following properties:
 * `FirstName (string, required)`: The name of the employee.
 * `LastName (string, required)`: The lastName of the employee.
@@ -23,7 +23,7 @@ The request body of the `AddSalary` endpoint should contain a JSON object with t
 * `PayDate(DateTime, required)`: This field epresents the date when the salary is paid. This field is a required field and should be provided in the format yyyy-MM-dd
 * `OverTimeCalculator (string, required)`: The type of overtime calculator to use when calculating the salary. Must be one of "CalculatorA", "CalculatorB", or "CalculatorC".
 
-## Response
+** Response **
 * `200 OK`: Salary data was successfully updated.
 * `400 Bad Request`: The request was invalid, and the API was unable to process it.
 * `404 Not Found`: The specified salary data was not found.
