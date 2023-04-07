@@ -5,8 +5,8 @@ This is a web API project developed using ASP.NET Core that allows for the manag
 ASP.NET Core 6
 
 ## Installation
-Clone this repository to your local machine.
-Build the project using Visual Studio or the .NET Core CLI.
-Run the project.
+* Clone this repository to your local machine.
+* Build the project using Visual Studio or the .NET Core CLI.
+* Run the project.
 
 
