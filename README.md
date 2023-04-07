@@ -9,4 +9,8 @@ This is a web API project developed using ASP.NET Core that allows for the manag
 #2 Build the project using Visual Studio or the .NET Core CLI.
 #3 Run the project.
 
+* Item 1 (#1)
+* Item 2 (#2)
+* Item 3 (#3)
+
 
