@@ -63,6 +63,12 @@ dataType XML
 	<OverTimeCalculator>CalculatorB</OverTimeCalculator>
 </AddSalaryRequset>
 ```
+dataType Custom
+```
+FirstName/LastName/BasicSalary/Allowance/Transportation/PayDate
+Yousef/Shahrezaie/28000000/2000000/800000/2023-04-07
+OverTimeCalculator:CalculatorC
+```
 
 **Response**
 * `200 OK`: Salary data was successfully updated.
