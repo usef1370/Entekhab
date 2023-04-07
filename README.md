@@ -34,6 +34,7 @@ The request body of the `AddSalary` endpoint should contain a JSON object with t
 * `OverTimeCalculator (string, required)`: The type of overtime calculator to use when calculating the salary. Must be one of "CalculatorA", "CalculatorB", or "CalculatorC".
 
 **Request Body Example**
+dataType Json
 ```json
 {
   "data": {
@@ -46,6 +47,21 @@ The request body of the `AddSalary` endpoint should contain a JSON object with t
   },
   "overTimeCalculator": "CalculatorA"
 }
+```
+dataType XML
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<AddSalaryRequset>
+	<Data>
+		<FirstName>Yousef</FirstName>
+		<LastName>Shahrezaie</LastName>
+		<BasicSalary>28000000</BasicSalary>
+		<Allowance>2000000</Allowance>
+		<Transportation>800000</Transportation>
+		<PayDate>2023-04-07</PayDate>
+	</Data>
+	<OverTimeCalculator>CalculatorB</OverTimeCalculator>
+</AddSalaryRequset>
 ```
 
 **Response**
